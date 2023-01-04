@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = "http://idkNicks.xyz:8081/repository/maven-public/"
+        allowInsecureProtocol = true
+    }
+}
+
+dependencies {
+
+    // DEPENDENCIES
+    implementation 'org.jetbrains:annotations:23.0.0'
+
+    // SPIGOT API
+    compileOnly "org.bukkit.spigotmc:spigot-api:1.19.2-R0.1"
+
+    // NICKLIB 발음이 너무 어려워요!!!!
+    compileOnly "com.github:nicklib:1.1.7"
+}
+
+jar {
+    destinationDirectory.set(file('E:\\테스트용 1.19.2\\plugins'))
+}

@@ -1,0 +1,15 @@
+name: RPG
+main: com.github.roje.rpg.Main
+author: Roje
+description: Minecraft RPG plugin
+
+version: 0.1
+api-version: 1.19
+
+depend: [NickLib]
+
+commands:
+  돈:
+  칭호:
+  스탯:
+  스탯포인트:
