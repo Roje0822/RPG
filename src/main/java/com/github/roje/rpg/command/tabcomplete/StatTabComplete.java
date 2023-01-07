@@ -10,7 +10,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class StatsTabComplete implements TabCompleter {
+public class StatTabComplete implements TabCompleter {
 
 
     @Nullable

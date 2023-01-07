@@ -4,13 +4,12 @@ import com.github.nicklib.data.Config;
 import com.github.roje.rpg.command.*;
 import com.github.roje.rpg.command.tabcomplete.MoneyTabComplete;
 import com.github.roje.rpg.command.tabcomplete.PrefixTabComplete;
-import com.github.roje.rpg.command.tabcomplete.StatsTabComplete;
+import com.github.roje.rpg.command.tabcomplete.StatTabComplete;
 import com.github.roje.rpg.event.InventoryClickListener;
 import com.github.roje.rpg.event.PlayerChatListner;
 import com.github.roje.rpg.event.PlayerInteractListener;
 import com.github.roje.rpg.event.PlayerJoinListener;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -21,13 +20,6 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         plugin = this;
         init();
-        System.out.println(ChatColor.GREEN + "RPG 플러그인이 켜졌습니다.");
-    }
-
-    @Override
-    public void onDisable() {
-
-        System.out.println(ChatColor.RED + "RPG 플러그인이 꺼졌습니다.");
     }
 
     public void init() {
@@ -51,7 +43,7 @@ public class Main extends JavaPlugin {
         // TABCOMPLETE
         Bukkit.getPluginCommand("돈").setTabCompleter(new MoneyTabComplete());
         Bukkit.getPluginCommand("칭호").setTabCompleter(new PrefixTabComplete());
-        Bukkit.getPluginCommand("스탯포인트").setTabCompleter(new StatsTabComplete());
+        Bukkit.getPluginCommand("스탯포인트").setTabCompleter(new StatTabComplete());
 
     }
 }
