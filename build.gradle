@@ -28,7 +28,3 @@ dependencies {
     implementation 'com.github.Roje0822:Party:-SNAPSHOT'
 
 }
-//
-//jar {
-//    destinationDirectory.set(file('E:\\테스트용 1.19.2\\plugins'))
-//}
