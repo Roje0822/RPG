@@ -11,6 +11,7 @@ repositories {
         url = "http://idkNicks.xyz:8081/repository/maven-public/"
         allowInsecureProtocol = true
     }
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -23,8 +24,11 @@ dependencies {
 
     // NICKLIB 발음이 너무 어려워요!!!!
     compileOnly "com.github:nicklib:1.1.7"
-}
 
-jar {
-    destinationDirectory.set(file('E:\\테스트용 1.19.2\\plugins'))
+    implementation 'com.github.Roje0822:Party:-SNAPSHOT'
+
 }
+//
+//jar {
+//    destinationDirectory.set(file('E:\\테스트용 1.19.2\\plugins'))
+//}
